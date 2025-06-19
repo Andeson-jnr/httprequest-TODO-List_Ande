@@ -31,7 +31,7 @@ async function handleRequest() {
     const todoList = document.getElementById("todo-list");
     todos.slice(0, 10).forEach((todo) => {
       const li = document.createElement("li");
-      li.textContent = `${todo.title} - ${todo.completed ? "✅ Done" : "❌ Not Done"}`;
+      li.textContent = `${todo.title} - ${todo.completed ? "✅successful" : "❌Declined"}`;
       todoList.appendChild(li);
     });
   } catch (error) {
